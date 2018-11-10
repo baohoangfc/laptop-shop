@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+       
+<tiles-definitions>
+ <!-- ADMIN TEMPLATE -->
+  <definition name="admin.template" template="/WEB-INF/templates/admin/template.jsp">
+    <put-attribute name="header" value="/WEB-INF/templates/admin/header.jsp" />
+    <put-attribute name="left-bar" value="/WEB-INF/templates/admin/left-bar.jsp" />
+    <put-attribute name="nav-bar" value="/WEB-INF/templates/admin/nav-bar.jsp" />
+    <put-attribute name="body" value="" />
+    <put-attribute name="footer" value="/WEB-INF/templates/admin/footer.jsp" />
+  </definition>
+  
+  <definition name="admin.index.index" extends="admin.template">
+    <put-attribute name="body" value="/WEB-INF/jsp/admin/index/index.jsp" />
+  </definition>
+  
+  <definition name="admin.cat.index" extends="admin.template">
+    <put-attribute name="body" value="/WEB-INF/jsp/admin/cat/index.jsp" />
+  </definition>
+  
+  <definition name="admin.cat.add" extends="admin.template">
+    <put-attribute name="body" value="/WEB-INF/jsp/admin/cat/add.jsp" />
+  </definition>
+  
+  <definition name="admin.cat.edit" extends="admin.template">
+    <put-attribute name="body" value="/WEB-INF/jsp/admin/cat/edit.jsp" />
+  </definition>
+  
+  <definition name="admin.manager.index" extends="admin.template">
+    <put-attribute name="body" value="/WEB-INF/jsp/admin/manager/index.jsp" />
+  </definition>
+  
+  <definition name="admin.manager.add" extends="admin.template">
+    <put-attribute name="body" value="/WEB-INF/jsp/admin/manager/add.jsp" />
+  </definition>
+  
+  <definition name="admin.manager.edit" extends="admin.template">
+    <put-attribute name="body" value="/WEB-INF/jsp/admin/manager/edit.jsp" />
+  </definition>
+  
+  <definition name="admin.product.index" extends="admin.template">
+    <put-attribute name="body" value="/WEB-INF/jsp/admin/product/index.jsp" />
+  </definition>
+  
+  <definition name="admin.product.add" extends="admin.template">
+    <put-attribute name="body" value="/WEB-INF/jsp/admin/product/add.jsp" />
+  </definition>
+  
+  <definition name="admin.product.edit" extends="admin.template">
+    <put-attribute name="body" value="/WEB-INF/jsp/admin/product/edit.jsp" />
+  </definition>
+  
+  <definition name="admin.order.index" extends="admin.template">
+    <put-attribute name="body" value="/WEB-INF/jsp/admin/order/index.jsp" />
+  </definition>
+  
+  <definition name="admin.slide.index" extends="admin.template">
+    <put-attribute name="body" value="/WEB-INF/jsp/admin/slide/index.jsp" />
+  </definition>
+  
+  <definition name="admin.slide.add" extends="admin.template">
+    <put-attribute name="body" value="/WEB-INF/jsp/admin/slide/add.jsp" />
+  </definition>
+  
+  <definition name="admin.slide.edit" extends="admin.template">
+    <put-attribute name="body" value="/WEB-INF/jsp/admin/slide/edit.jsp" />
+  </definition>
+  
+  
+   <!--END ADMIN TEMPLATE -->
+   
+   <!-- AUTH TEMPLATE -->
+	  <definition name="auth.template" template="/WEB-INF/templates/auth/template.jsp">
+	    <put-attribute name="header" value="/WEB-INF/templates/public/header.jsp" />
+	    <put-attribute name="body" value="" />
+	    <put-attribute name="footer" value="/WEB-INF/templates/public/footer.jsp" />
+	  </definition>
+	  
+	  <definition name="auth.login" extends="auth.template">
+	    <put-attribute name="body" value="/WEB-INF/jsp/auth/login.jsp" />
+	  </definition>
+	  
+	  <definition name="auth.404" extends="auth.template">
+	    <put-attribute name="body" value="/WEB-INF/jsp/auth/404.jsp" />
+	  </definition>
+	  
+	  <definition name="auth.403" extends="auth.template">
+	    <put-attribute name="body" value="/WEB-INF/jsp/auth/403.jsp" />
+	  </definition>
+   <!-- AUTH TEMPLATE -->
+   
+   <!-- CART TEMPLATE -->
+   	  <definition name="public.laptop.cart" extends="auth.template">
+	    <put-attribute name="body" value="/WEB-INF/jsp/public/cart.jsp" />
+	  </definition>
+	  
+	  <definition name="public.laptop.detail" extends="auth.template">
+	    <put-attribute name="body" value="/WEB-INF/jsp/public/detail.jsp" />
+	  </definition>
+	  
+	  <definition name="public.laptop.category" extends="auth.template">
+	    <put-attribute name="body" value="/WEB-INF/jsp/public/category.jsp" />
+	  </definition>
+	  
+	  <definition name="public.laptop.checkout" extends="auth.template">
+	    <put-attribute name="body" value="/WEB-INF/jsp/public/checkout.jsp" />
+	  </definition>
+	  
+	  <definition name="public.laptop.checkouton" extends="auth.template">
+	    <put-attribute name="body" value="/WEB-INF/jsp/public/checkouton.jsp" />
+	  </definition>
+   <!-- CART TEMPLATE -->
+   
+   
+    <!-- ///////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+ 
+ 
+ 
+   <!-- PUBLIC TEMPLATE -->
+	  <definition name="public.template" template="/WEB-INF/templates/public/template.jsp">
+	    <put-attribute name="header" value="/WEB-INF/templates/public/header.jsp" />
+	     <put-attribute name="sidebar" value="/WEB-INF/templates/public/sidebar.jsp" />
+	    <put-attribute name="body" value="" />
+	    <put-attribute name="footer" value="/WEB-INF/templates/public/footer.jsp" />
+	  </definition>
+	  
+	  <definition name="public.laptop.index" extends="public.template">
+	    <put-attribute name="body" value="/WEB-INF/jsp/public/home.jsp" />
+	  </definition>
+	  
+	 
+	  
+  <!--END PUBLIC TEMPLATE -->
+  
+  
+  
+  
+</tiles-definitions>
